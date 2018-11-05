@@ -19,17 +19,18 @@
 </head>
 
 <body>
-    {% include "navbar.html" %}
-    {% block content %}
-    <h1 class="text-center">Gallery</h1>
+    <div id="hehe">
+        {% include "navbar.html" %}
+        {% block content %}
+        <h1 class="text-center">My Gallery</h1>
 
-    {% endblock%}
+        {% endblock%}
 
-    {% block scripts %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    {% bootstrap_javascript%}
-    {% endblock%}
-
+        {% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        {% bootstrap_javascript%}
+        {% endblock%}
+    </div>
 </body>
 
 </html>
