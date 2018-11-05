@@ -1,9 +1,17 @@
+{% load bootstrap3 %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% endblock %}
+
 </head>
 
 <body>
