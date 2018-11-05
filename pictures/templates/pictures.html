@@ -1,29 +1,17 @@
 {% extends 'base.html' %}
-{% load bootstrap3 %}
-{% load static %}
-
 
 {% block content %}
 {{block.super}}
-
-<head>
-    {% block styles %}
-    {% bootstrap_css %}
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% endblock %}
-</head>
 
 <div class="container">
     <div class="row">
         <!-- Looping through news -->
         {% for picture in pictures %}
 
-        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 padding-0 hover">
+
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 padding-0 hover ">
             <img src="{{picture.picture.url}}" class=" img img-responsive" data-toggle="modal" data-target="#{{picture.id}}">
         </div>
-
-
-
 
         <!-- Modal -->
 
